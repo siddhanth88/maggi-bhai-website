@@ -15,7 +15,10 @@ import { whatsappHandler } from "../utils/common";
 
 export default function Contact() {
   return (
-    <section className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-gradient-to-br from-white via-slate-50 to-orange-50/20" id="contact">
+    <section
+      className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-gradient-to-br from-white via-slate-50 to-orange-50/20"
+      id="contact"
+    >
       {/* Ambient background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -52,9 +55,9 @@ export default function Contact() {
 
               <h2 className="text-3xl font-extrabold leading-tight text-transparent sm:text-4xl lg:text-5xl bg-clip-text bg-gradient-to-r from-slate-900 via-orange-900 to-slate-900">
                 Contact Our
-                <br />
                 <span className="relative inline-block mt-1">
                   <span className="relative z-10 text-orange-600">
+                    {" "}
                     Campaign
                   </span>
                   <div className="absolute bottom-0 left-0 right-0 h-2 sm:h-3 -z-0 bg-orange-200/40 blur-sm" />
@@ -69,10 +72,12 @@ export default function Contact() {
                 </span>
               </p>
             </div>
+
             {/* Contact Info Cards */}
             <div className="space-y-3">
+              {/* Location Card with Map */}
               <div className="p-4 transition-all duration-300 bg-white border shadow-md sm:p-5 group rounded-xl sm:rounded-2xl border-slate-200/50 hover:shadow-lg hover:-translate-y-1">
-                <div className="flex items-start gap-3 sm:gap-4">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-4">
                   <div className="relative flex-shrink-0">
                     <div className="absolute inset-0 transition-opacity duration-500 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500/20 to-red-500/20 blur-lg opacity-40 group-hover:opacity-60" />
                     <div className="relative flex items-center justify-center transition-transform duration-300 w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 group-hover:scale-110 group-hover:rotate-3">
@@ -82,26 +87,26 @@ export default function Contact() {
                       />
                     </div>
                   </div>
-                  <div className="flex-1 min-w-0 space-y-4">
-  <h4 className="mb-1 text-base font-bold sm:text-lg text-slate-900">
-    Location
-  </h4>
+                  <div className="flex-1 min-w-0 space-y-3">
+                    <h4 className="text-base font-bold sm:text-lg text-slate-900">
+                      Location
+                    </h4>
 
-  {/* Google Map */}
-  <div className="w-[300px] h-[300px] overflow-hidden border border-orange-300 shadow-xl rounded-2xl">
-    <iframe
-      title="Campaign Office Location"
-      src="https://www.google.com/maps?q=19.290966,73.0737152&z=20&output=embed"
-      className="w-full h-[320px] sm:h-[420px] border-0"
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    />
-  </div>
-</div>
-
+                    {/* Google Map - Fully Responsive */}
+                    <div className="w-full h-48 overflow-hidden border border-orange-300 shadow-xl sm:h-56 lg:h-72 rounded-2xl">
+                      <iframe
+                        title="Campaign Office Location"
+                        src="https://www.google.com/maps?q=19.290966,73.0737152&z=20&output=embed"
+                        className="w-full h-full border-0"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
 
+              {/* Phone Card */}
               <div className="p-4 transition-all duration-300 bg-white border shadow-md sm:p-5 group rounded-xl sm:rounded-2xl border-slate-200/50 hover:shadow-lg hover:-translate-y-1">
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="relative flex-shrink-0">
@@ -124,6 +129,7 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Email Card */}
               <div className="p-4 transition-all duration-300 bg-white border shadow-md sm:p-5 group rounded-xl sm:rounded-2xl border-slate-200/50 hover:shadow-lg hover:-translate-y-1">
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="relative flex-shrink-0">
@@ -146,6 +152,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+
             {/* Social Media & Stats Combined */}
             <div className="grid gap-3 sm:grid-cols-2">
               {/* Social Media */}
@@ -340,7 +347,14 @@ export default function Contact() {
             <p className="max-w-2xl mx-auto mb-6 text-base sm:text-lg text-orange-50">
               Be part of the change. Help us build a better Bhiwandi together.
             </p>
-            <button className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-lg sm:px-8 sm:py-4 sm:text-base rounded-xl sm:rounded-2xl hover:bg-orange-50 hover:scale-105 group" onClick={()=>whatsappHandler('I would like to join Maggi Bhai’s campaign as a volunteer and contribute to the development of Ward Number 9, Bhiwandi. Please share the next steps with me.\nमैं मैगी भाई के अभियान में स्वयंसेवक के रूप में शामिल होना चाहता/चाहती हूँ और भिवंडी के वार्ड नंबर 9 के विकास में योगदान देना चाहता/चाहती हूँ। कृपया मुझे आगे की प्रक्रिया के बारे में जानकारी दें।')}>
+            <button
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-lg sm:px-8 sm:py-4 sm:text-base rounded-xl sm:rounded-2xl hover:bg-orange-50 hover:scale-105 group"
+              onClick={() =>
+                whatsappHandler(
+                  "I would like to join Maggi Bhai's campaign as a volunteer and contribute to the development of Ward Number 9, Bhiwandi. Please share the next steps with me.\nमैं मैगी भाई के अभियान में स्वयंसेवक के रूप में शामिल होना चाहता/चाहती हूँ और भिवंडी के वार्ड नंबर 9 के विकास में योगदान देना चाहता/चाहती हूँ। कृपया मुझे आगे की प्रक्रिया के बारे में जानकारी दें।"
+                )
+              }
+            >
               <span>Become a Volunteer</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 sm:w-5 sm:h-5 group-hover:translate-x-1" />
             </button>
