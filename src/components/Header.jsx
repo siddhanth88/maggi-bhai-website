@@ -275,7 +275,7 @@ export default function Header() {
             </div>
 
             {/* Main Navigation */}
-            <div className="relative flex items-center gap-2 px-4 py-3 sm:gap-3 sm:px-6 sm:py-4 lg:px-4 lg:py-2.5">
+            <div className="relative flex items-center gap-2 px-4 py-3 sm:gap-3 sm:px-6 sm:py-4 lg:px-4 lg:py-2.5 justify-between">
               {/* Logo/Brand */}
               <a
                 href="#home"
