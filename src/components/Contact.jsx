@@ -110,7 +110,7 @@ export default function Contact() {
                       Phone
                     </h4>
                     <p className="text-sm sm:text-base text-slate-600">
-                     {whatsappPhoneNumber}
+                      {whatsappPhoneNumber}
                     </p>
                   </div>
                 </div>
