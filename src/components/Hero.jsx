@@ -1,8 +1,9 @@
 import { Vote } from "lucide-react";
+import { whatsappHandler } from "../utils/common";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden" id="home">
       {/* Background image */}
       <img
         src="/logo3.png"
@@ -24,23 +25,23 @@ export default function Hero() {
               <span className="font-semibold">Shiv Sena Candidate</span>
             </div>
             
-            <h1 className="font-heading text-6xl lg:text-7xl font-bold tracking-tightest leading-none">
+            <h1 className="text-6xl font-bold leading-none font-heading lg:text-7xl tracking-tightest">
               Maggi Bhai
             </h1>
 
-            <div className="font-subheading text-2xl font-semibold tracking-wide">
+            <div className="text-2xl font-semibold tracking-wide font-subheading">
               <p>Ward Number 9</p>
               <p>Bhiwandi Municipal Corporation</p>
             </div>
 
-           <p className="font-body text-lg font-medium leading-relaxed max-w-xl text-white/90">
+           <p className="max-w-xl text-lg font-medium leading-relaxed font-body text-white/90">
 
               Together, we will build a stronger, more prosperous Bhiwandi.
               Your trust, our commitment.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 text-lg font-bold text-orange-700 bg-white rounded-lg shadow-lg">
+              <button className="px-8 py-4 text-lg font-bold text-orange-700 bg-white rounded-lg shadow-lg" onClick={() => whatsappHandler()}>
                 Support Our Vision
               </button>
               <button className="px-8 py-4 text-lg font-bold text-white border-2 rounded-lg border-white/40 hover:bg-white/10">

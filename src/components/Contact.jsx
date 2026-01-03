@@ -10,11 +10,12 @@ import {
   Users,
   ArrowRight,
 } from "lucide-react";
-import { whatsappPhoneNumber } from "../constants";
+import { whatsappPhoneNumber } from "../utils/constants";
+import { whatsappHandler } from "../utils/common";
 
 export default function Contact() {
   return (
-    <section className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-gradient-to-br from-white via-slate-50 to-orange-50/20">
+    <section className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-gradient-to-br from-white via-slate-50 to-orange-50/20" id="contact">
       {/* Ambient background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -81,16 +82,23 @@ export default function Contact() {
                       />
                     </div>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h4 className="mb-1 text-base font-bold sm:text-lg text-slate-900">
-                      Location
-                    </h4>
-                    <p className="text-sm leading-relaxed sm:text-base text-slate-600">
-                      Ward Number 9, Bhiwandi
-                      <br />
-                      Thane District, Maharashtra
-                    </p>
-                  </div>
+                  <div className="flex-1 min-w-0 space-y-4">
+  <h4 className="mb-1 text-base font-bold sm:text-lg text-slate-900">
+    Location
+  </h4>
+
+  {/* Google Map */}
+  <div className="w-[300px] h-[300px] overflow-hidden border border-orange-300 shadow-xl rounded-2xl">
+    <iframe
+      title="Campaign Office Location"
+      src="https://www.google.com/maps?q=19.290966,73.0737152&z=20&output=embed"
+      className="w-full h-[320px] sm:h-[420px] border-0"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</div>
+
                 </div>
               </div>
 
@@ -332,7 +340,7 @@ export default function Contact() {
             <p className="max-w-2xl mx-auto mb-6 text-base sm:text-lg text-orange-50">
               Be part of the change. Help us build a better Bhiwandi together.
             </p>
-            <button className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-lg sm:px-8 sm:py-4 sm:text-base rounded-xl sm:rounded-2xl hover:bg-orange-50 hover:scale-105 group">
+            <button className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-lg sm:px-8 sm:py-4 sm:text-base rounded-xl sm:rounded-2xl hover:bg-orange-50 hover:scale-105 group" onClick={()=>whatsappHandler('I would like to join Maggi Bhai’s campaign as a volunteer and contribute to the development of Ward Number 9, Bhiwandi. Please share the next steps with me.\nमैं मैगी भाई के अभियान में स्वयंसेवक के रूप में शामिल होना चाहता/चाहती हूँ और भिवंडी के वार्ड नंबर 9 के विकास में योगदान देना चाहता/चाहती हूँ। कृपया मुझे आगे की प्रक्रिया के बारे में जानकारी दें।')}>
               <span>Become a Volunteer</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 sm:w-5 sm:h-5 group-hover:translate-x-1" />
             </button>

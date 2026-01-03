@@ -1,5 +1,6 @@
 import { Building2, GraduationCap, HeartPulse, Droplets, Lightbulb, Shield, ArrowRight, Sparkles } from 'lucide-react';
-import { whatsappPhoneNumber, whatsappSupportMessage } from '../constants';
+import { whatsappPhoneNumber, whatsappSupportMessage } from '../utils/constants';
+import { whatsappHandler } from '../utils/common';
 
 const visionPoints = [
   {
@@ -41,36 +42,8 @@ const visionPoints = [
 ];
 
 export default function Vision() {
-
-  const whatsappHandler = () => {
-  const phoneNumber = whatsappPhoneNumber; // ❗ NO +, NO spaces
-  // const phoneNumber = "919834101034"; // ❗ NO +, NO spaces
-  const message = whatsappSupportMessage;
-  const encodedMessage = encodeURIComponent(message);
-
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  let whatsappURL;
-
-  if (isMobile) {
-    // Mobile app
-    whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-    console.log("[WhatsApp] Opening mobile app");
-  } else {
-    // Desktop web
-    whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
-    console.log("[WhatsApp] Opening web version");
-  }
-
-  console.log("[WhatsApp] Phone:", phoneNumber);
-  console.log("[WhatsApp] Message:", message);
-  console.log("[WhatsApp] URL:", whatsappURL);
-
-  window.open(whatsappURL, "_blank", "noopener,noreferrer");
-};
-
   return (
-    <section className="relative min-h-screen overflow-hidden bg-white">
+    <section className="relative min-h-screen overflow-hidden bg-white" id="vision">
       {/* Ambient background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute rounded-full -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-orange-200/40 to-transparent blur-3xl animate-pulse" 
@@ -179,7 +152,7 @@ export default function Vision() {
             </p>
             
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <button className="inline-flex items-center gap-2 px-10 py-4 text-base font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-xl rounded-2xl sm:text-lg hover:bg-orange-50 hover:scale-105 hover:shadow-2xl group" onClick={whatsappHandler}>
+              <button className="inline-flex items-center gap-2 px-10 py-4 text-base font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-xl rounded-2xl sm:text-lg hover:bg-orange-50 hover:scale-105 hover:shadow-2xl group" onClick={()=>whatsappHandler()}>
                 <span>Join Our Campaign</span>
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>

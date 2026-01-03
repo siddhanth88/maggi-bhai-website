@@ -1,4 +1,5 @@
 import { Vote, Heart, ArrowRight, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Sparkles } from 'lucide-react';
+import { whatsappHandler } from '../utils/common';
 
 export default function Footer() {
   return (
@@ -35,7 +36,7 @@ export default function Footer() {
             <p className="max-w-2xl mx-auto mb-6 text-base sm:text-lg lg:text-xl text-orange-50">
               Together, we can build the Bhiwandi we've always dreamed of
             </p>
-            <button className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-lg sm:px-8 sm:py-4 sm:text-base lg:text-lg rounded-xl sm:rounded-2xl hover:bg-orange-50 hover:scale-105 group">
+            <button className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-orange-600 transition-all duration-300 transform bg-white shadow-lg sm:px-8 sm:py-4 sm:text-base lg:text-lg rounded-xl sm:rounded-2xl hover:bg-orange-50 hover:scale-105 group" onClick={()=> whatsappHandler()}>
               <span>Join the Movement</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 sm:w-5 sm:h-5 group-hover:translate-x-1" />
             </button>

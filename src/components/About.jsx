@@ -104,7 +104,7 @@ import { Heart, Users, TrendingUp, Award, Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-white">
+    <section className="relative min-h-screen overflow-hidden bg-white"  id="about">
       {/* Ambient background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute rounded-full -top-32 -right-32 w-80 h-80 bg-gradient-to-br from-orange-200/40 to-transparent blur-3xl animate-pulse" 
