@@ -393,7 +393,7 @@ export default function Header() {
                 {/* Mobile CTA Buttons */}
                 <div className="pt-2 space-y-2">
                   <a
-                    href="tel:+91XXXXXXXXXX"
+                    href="tel:+919146469000"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl text-slate-300 hover:text-white hover:bg-white/10"
                   >
