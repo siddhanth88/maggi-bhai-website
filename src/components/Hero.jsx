@@ -1,5 +1,9 @@
-import { Vote } from "lucide-react";
+import { ChevronRight, Vote } from "lucide-react";
 import { whatsappHandler } from "../utils/common";
+import { AnimatedGradientText } from "./ui/animated-gradient-text";
+import { SparklesText } from "./ui/sparkles-text";
+import { RainbowButton } from "./ui/rainbow-button";
+import { cn } from "../lib/utils";
 
 export default function Hero() {
   return (
@@ -25,9 +29,10 @@ export default function Hero() {
                 <span className="font-semibold">Shiv Sena Candidate</span>
               </div>
 
-              <h1 className="text-6xl font-bold leading-none lg:text-7xl">
+              {/* <h1 className="text-6xl font-bold leading-none lg:text-7xl">
                 Maggi Bhai
-              </h1>
+              </h1> */}
+              <SparklesText sparklesCount={12}>Maggi Bhai</SparklesText>
 
               <div className="text-2xl font-semibold">
                 <p>Ward Number 9</p>
@@ -42,11 +47,11 @@ export default function Hero() {
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={() => whatsappHandler()}
-                  className="px-8 py-4 text-lg font-bold text-orange-700 bg-white rounded-lg shadow-lg"
+                  className="px-2 py-2 text-lg font-bold text-orange-700 bg-white rounded-lg shadow-lg"
                 >
                   Support Our Vision
                 </button>
-                <button className="px-8 py-4 text-lg font-bold text-white border-2 rounded-lg border-white/40 hover:bg-white/10">
+                <button className="px-2 py-2 text-lg font-bold text-white border-2 rounded-lg border-white/40 hover:bg-white/10">
                   Learn More
                 </button>
               </div>
@@ -79,9 +84,11 @@ export default function Hero() {
               Shiv Sena Candidate
             </div>
 
-            <h1 className="text-3xl font-extrabold text-gray-900">
+            {/* <h1 className="text-3xl font-extrabold text-gray-900">
               Maggi Bhai
-            </h1>
+            </h1> */}
+            <SparklesText sparklesCount={6} className="text-4xl">Maggi Bhai</SparklesText>
+
 
             <p className="text-xs font-semibold tracking-wide text-gray-600 uppercase">
               Ward 9 · Bhiwandi Municipal Corporation
@@ -97,17 +104,18 @@ export default function Hero() {
               Bhiwandi.
             </p>
 
-            <div className="flex flex-col gap-3 pt-2">
-              <button
+            <div className="flex flex-col gap-6 pt-2">
+              {/* <button
                 onClick={() => whatsappHandler()}
                 className="w-full py-3 rounded-xl bg-orange-600 text-white font-bold text-base active:scale-[0.98]"
               >
                 Support Our Vision
-              </button>
-
-              <button className="w-full py-3 text-base font-bold text-orange-600 border-2 border-orange-200 rounded-xl">
+              </button> */}
+   <RainbowButton className="w-full bg-orange-600" variant={"outline"}>Support Our Vision</RainbowButton>
+   {/* <RainbowButton className="w-full bg-orange-600">Learn More</RainbowButton> */}
+              {/* <button className="w-1/3 py-1 text-base font-bold border-2 border-gray-200 rounded-sm text-black-600">
                 Learn More
-              </button>
+              </button> */}
             </div>
 
             <p className="pt-2 text-[11px] text-center text-gray-500">

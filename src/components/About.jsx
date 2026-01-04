@@ -126,7 +126,7 @@ export default function About() {
               <div className="space-y-4">
                 <div className="relative overflow-hidden shadow-xl group rounded-2xl">
                   <img
-                    src="/maggibhia.jpeg"
+                    src="/head.logo.png"
                     alt="Maggi Bhai Campaign"
                     className="object-cover w-full h-56 transition-transform duration-500 sm:h-64 group-hover:scale-110"
                   />
