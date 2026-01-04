@@ -91,7 +91,7 @@ export default function Vision() {
             return (
               <div
                 key={index}
-                className="relative overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-3xl hover:shadow-2xl hover:-translate-y-2"
+                className="relative overflow-hidden transition-all duration-500 bg-white border shadow-lg group rounded-3xl hover:shadow-2xl hover:-translate-y-2"
                 style={{
                   animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
                 }}
