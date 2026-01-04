@@ -1,5 +1,6 @@
 import { Vote, Heart, ArrowRight, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Sparkles } from 'lucide-react';
 import { whatsappHandler } from '../utils/common';
+import { whatsappPhoneNumber } from '../utils/constants';
 
 export default function Footer() {
   return (
@@ -51,8 +52,8 @@ export default function Footer() {
               <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-orange-500 rounded-lg opacity-50 sm:rounded-xl blur-lg animate-pulse" 
                      style={{ animationDuration: '3s' }} />
-                <div className="relative flex items-center justify-center w-12 h-12 rounded-lg sm:w-14 sm:h-14 bg-gradient-to-br from-orange-500 to-orange-600 sm:rounded-xl">
-                  <Vote className="w-6 h-6 text-white sm:w-7 sm:h-7" strokeWidth={2.5} />
+                <div className="relative flex items-center justify-center w-12 h-12 rounded-lg sm:w-14 sm:h-14 sm:rounded-xl">
+                  <img src='https://static.cdnlogo.com/logos/s/25/shiv-sena.svg' className="w-6 h-6 text-white sm:w-7 sm:h-7" strokeWidth={2.5} />
                 </div>
               </div>
               <div>
@@ -104,7 +105,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Phone className="flex-shrink-0 w-4 h-4 text-orange-400 sm:w-5 sm:h-5" strokeWidth={2} />
-                <span className="text-xs sm:text-sm">+91 XXXXX XXXXX</span>
+                <span className="text-xs sm:text-sm">+{whatsappPhoneNumber}</span>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Mail className="flex-shrink-0 w-4 h-4 text-orange-400 sm:w-5 sm:h-5" strokeWidth={2} />

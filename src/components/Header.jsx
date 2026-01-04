@@ -9,6 +9,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { whatsappHandler } from "../utils/common";
+import { whatsappPhoneNumber } from "../utils/constants";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -174,7 +175,9 @@ export default function Header() {
                 {/* Mobile CTA Buttons */}
                 <div className="pt-2 space-y-2">
                   <a
-                    href="tel:+919146469000"
+                    href={`tel:+91${whatsappPhoneNumber
+                      .replace(/\D/g, "")
+                      .slice(-10)}`}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl text-slate-300 hover:text-white hover:bg-white/10"
                   >

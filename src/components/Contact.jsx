@@ -182,7 +182,8 @@ export default function Contact() {
                     />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/_maggibhai_/"
+                    target="_blank"
                     className="relative flex items-center justify-center transition-all duration-300 w-11 h-11 sm:w-12 sm:h-12 rounded-xl group hover:scale-110"
                   >
                     <div className="absolute inset-0 transition-opacity duration-300 opacity-100 rounded-xl bg-gradient-to-br from-orange-600 to-pink-500 group-hover:opacity-90" />
