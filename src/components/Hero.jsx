@@ -34,12 +34,12 @@ export default function Hero() {
               </h1> */}
               <SparklesText sparklesCount={4}>Maggi Bhai</SparklesText>
 
-              <div className="text-2xl font-semibold">
+              <div className="font-sans text-lg font-semibold underline decoration-black-500 decoration-1 underline-offset-2">
                 <p>Ward Number 9</p>
                 <p>Bhiwandi Municipal Corporation</p>
               </div>
 
-              <p className="max-w-xl text-lg text-white/90">
+              <p className="max-w-xl mb-2 text-sm text-white/90">
                 Together, we will build a stronger, more prosperous Bhiwandi.
                 Your trust, our commitment.
               </p>
@@ -47,11 +47,11 @@ export default function Hero() {
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={() => whatsappHandler()}
-                  className="px-2 py-2 text-lg font-bold text-orange-700 bg-white rounded-lg shadow-lg"
+                  className="px-3 py-3 text-lg font-bold text-orange-700 bg-white rounded-lg shadow-lg"
                 >
                   Support Our Vision
                 </button>
-                <button className="px-2 py-2 text-lg font-bold text-white border-2 rounded-lg border-white/40 hover:bg-white/10">
+                <button className="px-3 py-3 text-lg font-bold text-white border-2 rounded-lg border-white/40 hover:bg-white/10">
                   Learn More
                 </button>
               </div>
@@ -87,10 +87,10 @@ export default function Hero() {
             {/* <h1 className="text-3xl font-extrabold text-gray-900">
               Maggi Bhai
             </h1> */}
-            <SparklesText sparklesCount={6} className="text-4xl">Maggi Bhai</SparklesText>
+            <SparklesText sparklesCount={4} className="text-4xl">Maggi Bhai</SparklesText>
 
 
-            <p className="text-xs font-semibold tracking-wide text-gray-600 uppercase">
+            <p className="text-xs font-semibold tracking-wide text-gray-600 underline uppercase decoration-black-500 decoration-1">
               Ward 9 · Bhiwandi Municipal Corporation
             </p>
 
