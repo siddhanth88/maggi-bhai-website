@@ -74,11 +74,34 @@ export default function Hero() {
             className="object-cover object-bottom w-full h-full"
           />
           <div className="absolute inset-x-0 bottom-0 h-40 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent" />{" "}
+          <div className="absolute inset-x-0 bottom-0 h-40 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent">
+            <div className="max-w-md mx-auto space-y-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-orange-600 rounded-full bg-orange-50">
+              <Vote className="w-4 h-4" />
+              Shiv Sena Candidate
+            </div>
+
+            {/* <h1 className="text-3xl font-extrabold text-gray-900">
+              Maggi Bhai
+            </h1> */}
+            <SparklesText sparklesCount={4} className="text-4xl text-white">Maggi Bhai</SparklesText>
+
+
+            <p className="text-xs font-semibold tracking-wide text-white underline uppercase decoration-black-500 decoration-1">
+              Ward 9 · Bhiwandi Municipal Corporation
+            </p>
+
+            <div className="w-10 h-1 bg-orange-500 rounded-full" />
+
+          </div>
+          </div>
         </div>
 
         {/* CONTENT */}
         <div className="px-5 py-6">
           <div className="max-w-md mx-auto space-y-4">
+            <div className="hidden">
+              
             <div className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-orange-600 rounded-full bg-orange-50">
               <Vote className="w-4 h-4" />
               Shiv Sena Candidate
@@ -95,6 +118,7 @@ export default function Hero() {
             </p>
 
             <div className="w-10 h-1 bg-orange-500 rounded-full" />
+            </div>
 
             <p className="text-sm leading-relaxed text-gray-700">
               Together, we will build a{" "}
