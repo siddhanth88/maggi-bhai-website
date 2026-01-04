@@ -1,4 +1,4 @@
-import { ChevronRight, Vote } from "lucide-react";
+import { ChevronRight, ExternalLink, Vote } from "lucide-react";
 import { whatsappHandler } from "../utils/common";
 import { AnimatedGradientText } from "./ui/animated-gradient-text";
 import { SparklesText } from "./ui/sparkles-text";
@@ -111,7 +111,9 @@ export default function Hero() {
               >
                 Support Our Vision
               </button> */}
-   <RainbowButton className="w-full bg-orange-600" variant={"outline"} onClick={() => whatsappHandler()}>Support Our Vision</RainbowButton>
+              <RainbowButton className="w-full bg-orange-600" variant={"outline"} onClick={() => whatsappHandler()}>Support Our Vision
+                <span><ExternalLink className="w-4 h-4" /></span>
+   </RainbowButton>
    {/* <RainbowButton className="w-full bg-orange-600">Learn More</RainbowButton> */}
               {/* <button className="w-1/3 py-1 text-base font-bold border-2 border-gray-200 rounded-sm text-black-600">
                 Learn More
