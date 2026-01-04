@@ -32,7 +32,7 @@ export default function Hero() {
               {/* <h1 className="text-6xl font-bold leading-none lg:text-7xl">
                 Maggi Bhai
               </h1> */}
-              <SparklesText sparklesCount={12}>Maggi Bhai</SparklesText>
+              <SparklesText sparklesCount={4}>Maggi Bhai</SparklesText>
 
               <div className="text-2xl font-semibold">
                 <p>Ward Number 9</p>
@@ -111,7 +111,7 @@ export default function Hero() {
               >
                 Support Our Vision
               </button> */}
-   <RainbowButton className="w-full bg-orange-600" variant={"outline"}>Support Our Vision</RainbowButton>
+   <RainbowButton className="w-full bg-orange-600" variant={"outline"} onClick={() => whatsappHandler()}>Support Our Vision</RainbowButton>
    {/* <RainbowButton className="w-full bg-orange-600">Learn More</RainbowButton> */}
               {/* <button className="w-1/3 py-1 text-base font-bold border-2 border-gray-200 rounded-sm text-black-600">
                 Learn More
