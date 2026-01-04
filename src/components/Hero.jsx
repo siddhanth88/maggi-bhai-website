@@ -68,9 +68,9 @@ export default function Hero() {
         <div className="relative w-full h-[80vh] bg-gray-100">
           <img
             // src="/mobile-hero1.png"
-            // src="/magibhai-real-1.jpeg"
-            src="/maggibhia.jpeg"
-            alt="Candidate"
+            // src="/maggibhia.jpeg"
+            src="/mobile-hero2.png"
+            alt="Maggi Bhai"
             className="object-cover object-bottom w-full h-full"
           />
           <div className="absolute inset-x-0 bottom-0 h-40 pointer-events-none bg-gradient-to-t from-black/90 via-black/50 to-transparent" />{" "}
