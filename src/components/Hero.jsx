@@ -8,7 +8,7 @@ import { cn } from "../lib/utils";
 export default function Hero() {
   return (
     <section className="relative h-screen overflow-hidden" id="home">
-      {/* ================= DESKTOP (OLD CODE – UNCHANGED) ================= */}
+      {/* =============== DESKTOP (OLD CODE – UNCHANGED) =============== */}
       <div className="hidden lg:block">
         {/* Background image */}
         <img
@@ -29,10 +29,7 @@ export default function Hero() {
                 <span className="font-semibold">Shiv Sena Candidate</span>
               </div>
 
-              {/* <h1 className="text-6xl font-bold leading-none lg:text-7xl">
-                Maggi Bhai
-              </h1> */}
-              {/* <SparklesText sparklesCount={4}>Maggi Bhai</SparklesText> */}
+              
               <SparklesText sparklesCount={10} className="text-5xl">
                 पालीवाल मंगिलाल तुलसीराम
               </SparklesText>
@@ -83,16 +80,15 @@ export default function Hero() {
                 <Vote className="w-4 h-4" />
                 Shiv Sena Candidate
               </div>
-              {/* <h1 className="text-3xl font-extrabold text-gray-900">
-                    Maggi Bhai
-                  </h1> */}
+
+              
               <SparklesText sparklesCount={6} className="text-3xl text-white">
                 पालीवाल मंगिलाल तुलसीराम
               </SparklesText>
               <div className="flex justify-center">
                 <span className="text-lg text-white">MAGGI BHAI</span>
               </div>
-              {/* <SparklesText sparklesCount={4} className="text-xs text-white">MAGGI BHAI</SparklesText> */}
+              
               <p className="text-xs font-semibold tracking-wide text-white underline uppercase decoration-black-500 decoration-1">
                 Ward 9 · Bhiwandi Municipal Corporation
               </p>
