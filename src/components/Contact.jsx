@@ -259,7 +259,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 transition-all duration-300 border outline-none sm:px-5 sm:py-4 bg-slate-50/50 rounded-xl sm:rounded-2xl border-slate-200 focus:border-orange-500 focus:ring-4 focus:ring-orange-100 focus:bg-white hover:border-slate-300"
-                    placeholder="your.email@example.com"
+                    placeholder="maggibhai.ward9@gmail.com"
                   />
                 </div>
 
@@ -274,7 +274,7 @@ export default function Contact() {
                     type="tel"
                     id="phone"
                     className="w-full px-4 py-3 transition-all duration-300 border outline-none sm:px-5 sm:py-4 bg-slate-50/50 rounded-xl sm:rounded-2xl border-slate-200 focus:border-orange-500 focus:ring-4 focus:ring-orange-100 focus:bg-white hover:border-slate-300"
-                    placeholder="+91 XXXXX XXXXX"
+                    placeholder="+91 97638 06250"
                   />
                 </div>
 
