@@ -31,7 +31,7 @@ export default function Hero() {
 
               
               <SparklesText sparklesCount={10} className="text-5xl">
-                पालीवाल मंगिलाल तुलसीराम
+                पालीवाल मांगीलाल तुलसीराम
               </SparklesText>
 
               <div className="font-sans text-lg font-semibold underline decoration-black-500 decoration-1 underline-offset-2">
