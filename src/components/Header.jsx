@@ -103,7 +103,7 @@ export default function Header() {
               {/* CTA Buttons - Desktop */}
               <div className="items-center hidden gap-2 lg:flex">
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel: +91 97638 06250"
                   className="relative flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold transition-all duration-300 rounded-full group text-slate-300 hover:text-white"
                 >
                   <Phone
