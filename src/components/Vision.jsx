@@ -158,9 +158,10 @@ export default function Vision() {
               </button>
               
               <button className="inline-flex items-center gap-2 px-10 py-4 text-base font-bold text-white transition-all duration-300 border-2 border-white/30 backdrop-blur-sm rounded-2xl sm:text-lg bg-white/10 hover:bg-white/20 hover:border-white/50 hover:scale-105">
-                <a
+               <a
               href="/Ward_9_Manifesto.pdf"
               download="Ward_9_Manifesto.pdf"
+              className="inline-flex items-center gap-2 px-10 py-4 text-base font-bold text-white border border-white/30 hover:bg-white hover:text-black transition"
               >
                 View Manifesto
                 </a>
