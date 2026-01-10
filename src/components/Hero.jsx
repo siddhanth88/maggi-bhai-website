@@ -69,7 +69,7 @@ export default function Hero() {
           <img
             // src="/mobile-hero1.png"
             // src="/maggibhia.jpeg"
-            src="/mobile-hero2.png"
+            src="/public/maggibhai-gpt.png"
             alt="Maggi Bhai"
             className="object-cover object-top w-full h-full"
           />
